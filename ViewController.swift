@@ -9,7 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var Lab_show: UILabel!
+    
+    @IBOutlet weak var Btn_show: UIButton!
+    
+    @IBOutlet weak var Btn_reset: UIButton!
+    
+    @IBOutlet var 小时_分_秒: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
