@@ -8,14 +8,25 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-    @IBOutlet weak var Lab_show: UILabel!
+class ViewController: UIViewController{
+    var laps : [String] = []
     
-    @IBOutlet weak var Btn_show: UIButton!
+    var timer = Timer()
+    var minutes : Int = 0;
+    var seconds : Int = 0;
+    var fractions : Int = 0;
     
-    @IBOutlet weak var Btn_reset: UIButton!
+    var stopWatchString : String = ""
+    var startStopWatch : Bool = true
+    var addLap : Bool = false
     
-    @IBOutlet var 小时_分_秒: UILabel!
+    @IBOutlet var stopwatch_show: UILabel!
+    
+    @IBOutlet var start_Btn: UIButton!
+    
+    @IBOutlet var lap_btn: UIButton!
+    
+    @IBOutlet var lapsTblview: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
