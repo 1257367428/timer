@@ -81,7 +81,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     //table view
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        var cell = UITableViewCell(style : UITableViewCell.CellStyle.value1, reuseIdentifier : "Cell")
+        let cell = UITableViewCell(style : UITableViewCell.CellStyle.value1, reuseIdentifier : "Cell")
         cell.backgroundColor = self.view.backgroundColor
         cell.textLabel?.text = "Lap \(laps.count - indexPath.row)"
         cell.detailTextLabel?.text = laps[indexPath.row]
