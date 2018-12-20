@@ -60,6 +60,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
             minutes = 0
             seconds = 0
             
+            
             stopwatch_showString = "00.00.00"
             stopwatch_show.text = String(stopwatch_showString)
             
